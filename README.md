@@ -1,6 +1,7 @@
 # Capstone-Group4-Kristin-Levine
-Using ensembled pre-trained CNN networks to classify MRI images of patients with Alzheimer’s Disease
+Using augmentation and ensembling to increase the accuracy of Alzheimer’s disease MRI classification
 
+CODE
 
 1-Preprocess-data
 
