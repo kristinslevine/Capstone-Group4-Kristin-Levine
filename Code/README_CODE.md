@@ -26,21 +26,29 @@ Shift_train.py:
 
 This folder contains three files using non-augmented data: ResNet50, VGG16, Xception
 
-1. Change the paths to the original train, val, and test datasets (Cell 4, Cell 27)
-2. Select the path for where to save your model (Cell 17, Cell 32)
-3. Select the path for where to save the figures of loss/accuracy (Cell 21, Cell 26)
+For each file: 
+
+1. Change the paths to the abspath_curr, original train, val, and test folders (Cell 4)
+3. Run the file to train the model
 
 **3-Create-Models-Flipped**
 
-change the paths to the original train, val, and flip_train datasets (cells___)
-also make note of the path you choose to save your model
-if you wish, adjust paths for saving the graphs
+This folder contains three files using flipped-augmented data: ResNet50, VGG16, Xception
+
+For each file: 
+
+1. Change the paths to the abspath_curr, flip_train, val, and test folders (Cell 4)
+3. Run the file to train the model
 
 **4-Create-Models-Shifted**
 
-change the paths to the original train, val, and shift datasets (cells___)
-also make note of the path you choose to save your model
-if you wish, adjust paths for saving the graphs
+
+This folder contains three files using shifted-augmented data: ResNet50, VGG16, Xception
+
+For each file: 
+
+1. Change the paths to the abspath_curr, shift_train, val, and test folders (Cell 4)
+3. Run the file to train the model
 
 **5-Ensemble-Best-Models**
 
