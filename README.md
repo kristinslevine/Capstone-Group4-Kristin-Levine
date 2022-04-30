@@ -1,6 +1,8 @@
 # Capstone-Group4-Kristin-Levine
 Using augmentation and ensembling to increase the accuracy of Alzheimer’s disease MRI classification
 
+FOLDER DESCRIPTIONS
+
 Code -- contains all the code needed to recreate this project as well as an addition README explaining how to run
 
 Final-Presentation -- contains the PowerPoint slides for this project
