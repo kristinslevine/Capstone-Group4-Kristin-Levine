@@ -10,9 +10,17 @@ Make_val_set.py:
 1. After downloading the data, set the path to the train folder.
 2. Run this file to create a separate validation set.
 
-Flip_train.py: After you have run "Make_val_set.py" copy the test dataset and remain it flip_train. Then run this file
+Flip_train.py: 
+1. Make sure you have run "Make_val_set.py" first to create the validation set.
+2. Make a copy of the train folder and rename it "flip_train"
+3. Set the path to the original "train" and the "flip_train" folder
+4. Run this file to augment the data by flipping the images
 
-Shift_train.py: Copy the original test dataset again and rename it shift-train. Then run this file
+Shift_train.py: 
+1. Make sure you have run "Make_val_set.py" first to create the validation set.
+2. Make a copy of the train folder and rename it "shift_train"
+3. Set the path to the original "train" and the "shift_train" folder
+4. Run this file to augment the data by shifting the images
 
 **2-Create-Models-No-Augmentation**
 
