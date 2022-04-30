@@ -6,7 +6,9 @@ https://www.kaggle.com/tourist55/alzheimers-dataset-4-class-of-images
 
 **1-Preprocess-data** -- use the files in this folder to create a separate validatation dataset, as well as create the flipped and shifted test sets
 
-Make_val_set.py: After downloading the data, run this file to create a separate validation set.
+Make_val_set.py: 
+1. After downloading the data, set the path to the train folder.
+2. Run this file to create a separate validation set.
 
 Flip_train.py: After you have run "Make_val_set.py" copy the test dataset and remain it flip_train. Then run this file
 
