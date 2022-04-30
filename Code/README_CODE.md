@@ -9,7 +9,7 @@ https://www.kaggle.com/tourist55/alzheimers-dataset-4-class-of-images
 After downloading the data, run this file to create a separate validation set.
 
 **Flip_train.py**
-After you have run "Make_val_set.py" copy the test dataset and remain it flip_train
+After you have run "Make_val_set.py" copy the test dataset and remain it flip_train/n
 Then run this file
 
 **Shift_train.py**
