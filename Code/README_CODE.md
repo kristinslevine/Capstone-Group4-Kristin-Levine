@@ -52,5 +52,5 @@ For each file:
 
 **5-Ensemble-Best-Models**
 
-change the path to your test datset (cell__)
-changes the paths to your created models (cell__)
+1. Change the path to your abspath_curr and test folder (Cell 4)
+2. Run the file to ensemble the models
