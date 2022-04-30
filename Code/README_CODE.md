@@ -24,9 +24,11 @@ Shift_train.py:
 
 **2-Create-Models-No-Augmentation**
 
-change the paths to the original train, val, and test datasets (cells___)
-also make note of the path you choose to save your model
-if you wish, adjust paths for saving the graphs
+This folder contains three files using non-augmented data: ResNet50, VGG16, Xception
+
+1. Change the paths to the original train, val, and test datasets (Cell 4, Cell 27)
+2. Select the path for where to save your model (Cell 17, Cell 32)
+3. Select the path for where to save the figures of loss/accuracy (Cell 21, Cell 26)
 
 **3-Create-Models-Flipped**
 
