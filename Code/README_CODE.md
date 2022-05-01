@@ -57,13 +57,13 @@ For each file:
 1. Change the path to your abspath_curr and test folder 
 2. Run the file to ensemble the models
 
-**6-Other-Dataset_Explorations**
+**6-Other-Dataset-Explorations**
 
 Note: I used ADNI images for these files; researchers can apply for access at https://adni.loni.usc.edu/
 
-These are not ALL the files I used in my explorations -- just a sampling.
+A sampling of files I used in my explorations and attempts to create another dataset:
 
 1. Preprocess_63_Slices -- example of how I extracted slices from MRI images
 2. MRI_Xception -- example of one of the models with excellent train/val accuracy, but very poor test accuracy
 3. MRI_Combine_Models -- example of how I attempted to created patient-wise (not slice-wise) accuracy
-4. AD_Kaggle_Model_FreeSurfer_Preprocess -- example of how I explored the ADNI FreeSurfer images, trying to explore which ones had the more information for the model
+4. AD_Kaggle_Model_FreeSurfer_Preprocess -- example of how I explored the ADNI FreeSurfer images, trying to discover which slices had the most information for the model
