@@ -28,7 +28,7 @@ This folder contains three files using non-augmented data: ResNet50, VGG16, Xcep
 
 For each file: 
 
-1. Change the paths to the abspath_curr, original train, val, and test folders (Cell 4)
+1. Change the paths to the abspath_curr, original train, val, and test folders 
 3. Run the file to train the model
 
 **3-Create-Models-Flipped**
@@ -37,7 +37,7 @@ This folder contains three files using flipped-augmented data: ResNet50, VGG16, 
 
 For each file: 
 
-1. Change the paths to the abspath_curr, flip_train, val, and test folders (Cell 4)
+1. Change the paths to the abspath_curr, flip_train, val, and test folders 
 3. Run the file to train the model
 
 **4-Create-Models-Shifted**
@@ -47,12 +47,12 @@ This folder contains three files using shifted-augmented data: ResNet50, VGG16, 
 
 For each file: 
 
-1. Change the paths to the abspath_curr, shift_train, val, and test folders (Cell 4)
+1. Change the paths to the abspath_curr, shift_train, val, and test folders 
 3. Run the file to train the model
 
 **5-Ensemble-Best-Models**
 
 For each file:
 
-1. Change the path to your abspath_curr and test folder (Cell 4)
+1. Change the path to your abspath_curr and test folder 
 2. Run the file to ensemble the models
