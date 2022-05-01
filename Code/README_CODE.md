@@ -52,5 +52,7 @@ For each file:
 
 **5-Ensemble-Best-Models**
 
+For each file:
+
 1. Change the path to your abspath_curr and test folder (Cell 4)
 2. Run the file to ensemble the models
