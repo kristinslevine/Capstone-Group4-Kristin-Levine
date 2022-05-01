@@ -38,7 +38,7 @@ This folder contains three files using flipped-augmented data: ResNet50, VGG16, 
 For each file: 
 
 1. Change the paths to the abspath_curr, flip_train, val, and test folders 
-3. Run the file to train the model
+2. Run the file to train the model
 
 **4-Create-Models-Shifted**
 
@@ -48,7 +48,7 @@ This folder contains three files using shifted-augmented data: ResNet50, VGG16, 
 For each file: 
 
 1. Change the paths to the abspath_curr, shift_train, val, and test folders 
-3. Run the file to train the model
+2. Run the file to train the model
 
 **5-Ensemble-Best-Models**
 
@@ -63,7 +63,7 @@ Note: I used ADNI images for these files; researchers can apply for access at ht
 
 These are not ALL the files I used in my explorations -- just a sampling.
 
-Preprocess_63_Slices -- example of how I extracted slices from MRI images
-MRI_Xception -- example of one of the models with excellent train/val accuracy, but very poor test accuracy
-MRI_Combine_Models -- example of how I attempted to created patient-wise (not slice-wise) accuracy
-AD_Kaggle_Model_FreeSurfer_Preprocess -- example of how I explored the ADNI FreeSurfer images, trying to explore which ones had the more information for the model
+1. Preprocess_63_Slices -- example of how I extracted slices from MRI images
+2. MRI_Xception -- example of one of the models with excellent train/val accuracy, but very poor test accuracy
+3. MRI_Combine_Models -- example of how I attempted to created patient-wise (not slice-wise) accuracy
+4. AD_Kaggle_Model_FreeSurfer_Preprocess -- example of how I explored the ADNI FreeSurfer images, trying to explore which ones had the more information for the model
