@@ -1,0 +1,209 @@
+Delivered-To: klevine22@gwmail.gwu.edu
+Received: by 2002:a05:622a:a17:0:0:0:0 with SMTP id bv23csp5941392qtb;
+        Mon, 2 May 2022 05:09:37 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxWuOxK2O6oXjc+JPjMIZVa+z78OFBXqiW9rLNOxBITgYXDyLdnQ8Vj+/wAuZQPdegiwh4H
+X-Received: by 2002:ad4:5b85:0:b0:458:1192:77c2 with SMTP id 5-20020ad45b85000000b00458119277c2mr9127326qvp.124.1651493377873;
+        Mon, 02 May 2022 05:09:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1651493377; cv=none;
+        d=google.com; s=arc-20160816;
+        b=i+7SzWjlYbuIXGk17Erz260kotyottlM2JJHbzS9cpB9MLrcKzwuNI66f72VPqEqws
+         r8ff26uF+REGPs5DRsn7ba9JQ2NDGoicENtIbG7Zo2eZXfcMdsZ9P5BlYTaaGKP55xvw
+         UTnSupVCQ7sji8h/szS3qKvnSJd+Q26SZeElwbMBZwgnCW1bmDwYtvGb8KYXXNMRrqzA
+         6FoNAsy5ZnJSBkvowHI6u3f/iZoZtbPqiLAvkFxxFHdI0WSlqRsz09OqckKbOi5CTq0L
+         RHiV35tSiV4M0J62qFMXjDezOSUev5D+u7zcVGQ+wFxasglFQPr4Pb/Sg9EJyzXgvKLm
+         ki0A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:content-transfer-encoding:subject:date:reply-to:to:from
+         :sender:mime-version:ironport-hdrordr:ironport-data:ironport-phdr
+         :ironport-sdr;
+        bh=VtFGhwXRNEl79ThEiZ6BDnn2Kx+0GFjNC5/tyb7AbjQ=;
+        b=L4Auu5rocFfAKsrd2sbDHxjNAtIlZguDIPfL/oEraP5nueGi0iM3EyOYDuWXicq0KH
+         sH9TEGlOlz8j8B8venxC03X7FrJoD2/3XPGru70PnQJK5+ZA9JOIZPSJJVSJVQnLiuQ8
+         1tlLNF27HEAtLr9FQhdCbzi06DAfki7oWAQbWz/gf+YJpPZLxqop8CsWnqVRzEpCEgbt
+         cmPhsjDnZwZismIbXYGutb4C/V2MU29QU9Du8uU7+YOmpMDcSqyQ8c+hD+H/8LifEoql
+         UmvH3LoW+bwX4nZgPQVQ9tIlf8Gxo//R7LwFjl+UdDryMVKIDAdjLySgkWDzoUTxLJdr
+         ZVlA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of em.ncaa.0.7b0bae.2928fbee@editorialmanager.com designates 216.205.0.108 as permitted sender) smtp.mailfrom=em.ncaa.0.7b0bae.2928fbee@editorialmanager.com
+Return-Path: <em.ncaa.0.7b0bae.2928fbee@editorialmanager.com>
+Received: from mailprdfbdmz2-smtp.es.gwu.edu (mailprdfbdmz2-smtp.es.gwu.edu. [128.164.45.17])
+        by mx.google.com with ESMTPS id az4-20020ad45504000000b0044632a7002esi5686879qvb.47.2022.05.02.05.09.37
+        for <klevine22@gwmail.gwu.edu>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 02 May 2022 05:09:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of em.ncaa.0.7b0bae.2928fbee@editorialmanager.com designates 216.205.0.108 as permitted sender) client-ip=216.205.0.108;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of em.ncaa.0.7b0bae.2928fbee@editorialmanager.com designates 216.205.0.108 as permitted sender) smtp.mailfrom=em.ncaa.0.7b0bae.2928fbee@editorialmanager.com
+Authentication-Results: mailprdfbdmz2-mx.es.gwu.edu; spf=Pass smtp.mailfrom=em.ncaa.0.7b0bae.2928fbee@editorialmanager.com; spf=None smtp.helo=postmaster@nssmtp01.editorialmanager.com
+Received-SPF: Pass (mailprdfbdmz2-mx.es.gwu.edu: domain of
+  em.ncaa.0.7b0bae.2928fbee@editorialmanager.com designates
+  216.205.0.108 as permitted sender) identity=mailfrom;
+  client-ip=216.205.0.108;
+  receiver=mailprdfbdmz2-mx.es.gwu.edu;
+  envelope-from="em.ncaa.0.7b0bae.2928fbee@editorialmanager.com";
+  x-sender="em.ncaa.0.7b0bae.2928fbee@editorialmanager.com";
+  x-conformance=spf_only; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:216.205.0.64/26 -all"
+Received-SPF: None (mailprdfbdmz2-mx.es.gwu.edu: no sender
+  authenticity information available from domain of
+  postmaster@nssmtp01.editorialmanager.com) identity=helo;
+  client-ip=216.205.0.108;
+  receiver=mailprdfbdmz2-mx.es.gwu.edu;
+  envelope-from="em.ncaa.0.7b0bae.2928fbee@editorialmanager.com";
+  x-sender="postmaster@nssmtp01.editorialmanager.com";
+  x-conformance=spf_only
+IronPort-SDR: iMgyBkGaoTVG25Eg8yVZ5UkKaJkwpEHFYjw44Br3sYnAqqGEo3Sm3jZi8wA2jZ04YwmZC80Jg2
+ HBiwklNv0zv3rWygPA6LAB60WbClGIW4DzI1yIO3W46cEY5EkNXYmTMuTCjBEzRENsDI5ZUA0X
+ LMi+Gigj0GeaCUOwcmzM/hAOqAfz28sG1YpIy7DbYU+avLaTGBV8ihSVSebavy7LMkwWSTrY90
+ qfS8vEyND/dlk4NdiWb8uT+TxzmFDJyR5o2YxVpMNLyf1Cb07tkCd+W1hjhsgqB3VH7qDy1gVG
+ n5XniMcs+7hD9KWIM0snKWkF
+X-IPAS-Result: =?us-ascii?q?A0DCAgBoyW9ih2wAzdhXAw57gU+CJBkBZFQuBE4ChEyOZ?=
+ =?us-ascii?q?oIHHmyPXIwdFIFfFAEBAQEBAQEBAQksCwsEAQGFGoUdAh0HATQJDgECBAEBA?=
+ =?us-ascii?q?QEDAgMBAQEBAQEDAQEBBAEBAQIBAQIEAgEBFAEBAQENCwkFCAoHEA4FPGRog?=
+ =?us-ascii?q?U9ngRIHAzANhmwRFUEYDAISAQESAgQ+HYMQAYIPgQgFCqZUhiaBL4EuA4EBh?=
+ =?us-ascii?q?FmFJQkBgQYsjl0nHIINgRQBNoQ3AYFSCwQYfgkFBQESAWYCAQIFgweCZQSVC?=
+ =?us-ascii?q?wgWE18FEQMYCSYhCC0FBwwTHQoICRUGEB8XAT+RZQseK64SCiaDJZNNg3KBI?=
+ =?us-ascii?q?YdVg3SMOpUUgxKDZIM5ihaFLpB/gW6ORzMYhRyBYYECI3BwFYIIgR0IRQECA?=
+ =?us-ascii?q?QINAQICAwECAQIJAQECAgECAgFMkTuKGWEoMQIIMQIGAQoBAQMJih4PFQKCI?=
+ =?us-ascii?q?AEB?=
+IronPort-PHdr: A9a23:XpIOHB3ndf/6modHsmDO+gMyDhhOgF2VFgsc654/kb5AeKim7c6nO
+ VyZ6O4rg0DUG4jX9qEMkPLY5pjpQndI+pOdqDYHeZ1IWQUCjJAbmkomC8eMTxW9c/SyZSU3W
+ p4TDg9r9Xy2GUVZGdr5fVzbpni76zcdFw+5Pg1wdazuAoCHqcOx2qip/oHLJQVFgD3oebRpM
+ BC/thncrOEQmpBnNr5pk13ErnpUfP5XzGdtLFSakBvmoMy3+faP6gxosuk6v45FWKT+Z740Q
+ 7ZUCSZ8dmUlosDw8xbcUE2C6mZOGmkRlxNJBUDC4nSYFt/8t238veN0nnHcYseuR7k5H27zt
+ fdlQhLloCoLNiI+6mDejsl5iqtUrQjnrBt6i4LZe4CaMvNic7i4H5tSHzMfGJwJCmoZRNrkP
+ 8MGFKIZMPxdrpXhqldGtha4CQS2RavuxjJOmn7qzPg/2uUlHxvB2V9FfZpGu3DVodPpcaYKB
+ Lrsku+SlWiFN7UPgWeujeqAOgosqvyNQ79qJM/YyE03DQ/LhFmVu9agOiPT2/9LvHeGqedsS
+ LHK6SZvpgdvrzyo3spphJPOg9dfx1WC8y5wycBtY4KyEERybJj+QcEAuSuXOqN7TsI+RHtps
+ SI/w7sPtpOhOiMNzd50onyXI+zCaIWO7h/5AaycJHF+j3tsPur52Bzq+0GtjLetDJm62ltHh
+ idJk8XLrHEE0xna7MGIR+E79UCkk2XqtUib+qRPJkY6krDeIpgqz+srjpQktkLHD3y+iADsg
+ aSRbElh5vmw5rGtfOD9vpHFfdwR6Em2IuE0l8e4G+h9LgUeQz3R57GnzLO6tUzhHOcQ16Nwy
+ PGE9sice5hc/PDxRgZR1sxLBw+XKTCg3ZxYmHAGKEpfdByNg437YRTLMLb1FrGwnEnqnTt2l
+ bjAOfX6D5PBI2Km8v+pdKth60Na1As4zMxOr5NSBLYbJfvvW0j3/NXGBx49Ogawzq7pEtJ4n
+ o8ZXGuOBOeePsaw+ReQ4fkzJuCXeIIPkDDmMP05/6a3y3I1mEMaZ6ig2Z4ebnm3E+4gKEKcI
+ DLtjtoHDWYWr18+Qejt2zjgGXZYY3e/Wb555yluUtv4S92bG8b1xuXZjHTefNUefG1NB1GSH
+ G29coyFX+8WZCyYLspzyHkBRf6sUMkuygzouQPnmN8FZqLZ/DMVsZX72Z17/erWwFs/8HpyB
+ M2UlTnLEGsslGoFAWVnhvBxq0Fw4lqP0LR/mf1REdla4fpGXx18PpnZhb8faZi6Skfac9GFR
+ UzzCM2hGi00R8ktzsUmZV1mHsm61kmF0iarH7gPlrWPAZUy+63RxT76IMM3mBOknOExylIhR
+ MVIL2ivgKVyohPLCbnOlUGI/05FXakQ3TLK7maKyW+HukhXXRQ2WqLADyl3jqr+q8/i41/aF
+ +boBLgmLgxbyMeGL6JMY9LklxNNQ/KxYLzj
+IronPort-Data: A9a23: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
+IronPort-HdrOrdr: A9a23:meNvY6M0xtAqFMBcTs+jsMiBIKoaSvp037BN7TESdfU1SL36qy
+ nAppUmPHPP5Ar5O0tLpTnjAtjlfZq0z/ccirX5W43NYOCPghrMEGhM1+bfKlbbexEWmNQz6U
+ 8qG5IOb+HNMQ==
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.91,190,1647316800"; 
+   d="scan'208";a="59196362"
+X-GWInboundCheck: TRUE
+X-MGA-submission: =?us-ascii?q?MDFnRRSuXvYHSPgRk+IatQFT/1Fch2BmtnNgRA?=
+ =?us-ascii?q?AYuRd/NTCzS0epBdOyv+daCsBjqJjqxHzZC7vj3R+1qNh95I3AfA6EwX?=
+ =?us-ascii?q?TbDCW3cBQiPL2bxU86jgdLcEVJypB8qAxy6hT4jVnKvhwLlWoA/B4bGB?=
+ =?us-ascii?q?Qv?=
+Received: from nssmtp01.editorialmanager.com ([216.205.0.108])
+  by mailprdfbdmz2-mx.es.gwu.edu with ESMTP/TLS/ECDHE-RSA-AES128-GCM-SHA256; 02 May 2022 08:09:23 -0400
+Received: from nsweb12 ([10.200.66.31]) by nssmtp01.editorialmanager.com with Microsoft SMTPSVC(10.0.17763.1);
+	 Mon, 2 May 2022 08:08:31 -0400
+MIME-Version: 1.0
+Sender: em.ncaa.0.7b0bae.2928fbee@editorialmanager.com
+From: "Neural Computing and Applications (NCAA)" <em@editorialmanager.com>
+To: "Kristin Levine" <klevine22@gwu.edu>
+Reply-To: "Neural Computing and Applications (NCAA)"
+ <rashmi.jenna@springer.com>
+Date: 2 May 2022 08:08:31 -0400
+Subject: NCAA-D-22-02078 - Submission Confirmation
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+Return-Path: em.ncaa.0.7b0bae.2928fbee@editorialmanager.com
+Message-ID: <NSSMTP01cN3SINrSxbR00069b5b@nssmtp01.editorialmanager.com>
+X-OriginalArrivalTime: 02 May 2022 12:08:31.0322 (UTC) FILETIME=[56F26BA0:01D85E1D]
+
+RGVhciBNcy4gTGV2aW5lLA0KDQpUaGFuayB5b3UgZm9yIHN1Ym1pdHRpbmcgeW91ciBt
+YW51c2NyaXB0LCBBdWdtZW50aW5nIGFuZCBFbnNlbWJsaW5nIENOTiBNb2RlbHMgdG8g
+SW5jcmVhc2UgdGhlIEFjY3VyYWN5IG9mIEFsemhlaW1lcuKAmXMgRGlzZWFzZSBNUkkg
+Q2xhc3NpZmljYXRpb24sIHRvIE5ldXJhbCBDb21wdXRpbmcgYW5kIEFwcGxpY2F0aW9u
+cy4NCg0KVGhlIG1hbnVzY3JpcHQgbnVtYmVyIGlzOiBOQ0FBLUQtMjItMDIwNzgNCg0K
+UGxlYXNlIHJlZmVyIHRvIHRoaXMgbnVtYmVyIGluIGFueSBmdXR1cmUgY29ycmVzcG9u
+ZGVuY2UuDQoNCkR1cmluZyB0aGUgcmV2aWV3IHByb2Nlc3MsIHlvdSBjYW4ga2VlcCB0
+cmFjayBvZiB0aGUgc3RhdHVzIG9mIHlvdXIgbWFudXNjcmlwdCBieSBhY2Nlc3Npbmcg
+dGhlIGpvdXJuYWwncyB3ZWJzaXRlLg0KDQpZb3VyIHVzZXJuYW1lIGlzOiBrc2xldmlu
+ZTIyIA0KSWYgeW91IGZvcmdvdCB5b3VyIHBhc3N3b3JkLCB5b3UgY2FuIGNsaWNrIHRo
+ZSAnU2VuZCBMb2dpbiBEZXRhaWxzJyBsaW5rIG9uIHRoZSBFTSBMb2dpbiBwYWdlIGF0
+IGh0dHBzOi8vd3d3LmVkaXRvcmlhbG1hbmFnZXIuY29tL25jYWEvLg0KDQpXZSBoYXZl
+IHNlbnQgYW4gZS1tYWlsIHRvIGFsbCBjby1hdXRob3JzIG9mIHRoaXMgc3VibWlzc2lv
+biBhc2tpbmcgdGhlbSB0byBjb25maXJtIHRoZWlyIGNvLWF1dGhvcnNoaXAuIFlvdSBj
+YW4gc2VlIHRoZSBzdGF0dXMgb2YgY28tYXV0aG9yc2hpcCBjb25maXJtYXRpb25zIHVu
+ZGVyICJBdXRob3IgU3RhdHVzIiBpbiB5b3VyIGF1dGhvciBtYWluIG1lbnUuIFBsZWFz
+ZSBjaGVjayB3aXRoIHlvdXIgY28tYXV0aG9ycyBpbiBjYXNlIHNvbWVib2R5IGRvZXMg
+bm90IGNvbmZpcm0gd2l0aGluIHJlYXNvbmFibGUgdGltZS4gSW4gY2FzZSBvZiBhY2Nl
+cHRhbmNlLCBhIHBhcGVyIG1pZ2h0IG5vdCBiZSBwdWJsaXNoZWQgd2l0aCBvdXRzdGFu
+ZGluZyBjby1hdXRob3IgY29uZmlybWF0aW9ucy4NCg0KU2hvdWxkIHlvdSByZXF1aXJl
+IGFueSBmdXJ0aGVyIGFzc2lzdGFuY2UgcGxlYXNlIGZlZWwgZnJlZSB0byBlLW1haWwg
+dGhlIEVkaXRvcmlhbCBPZmZpY2UgYnkgY2xpY2tpbmcgb24gIkNvbnRhY3QgVXMiIGlu
+IHRoZSBtZW51IGJhciBhdCB0aGUgdG9wIG9mIHRoZSBzY3JlZW4uDQoNCldpdGgga2lu
+ZCByZWdhcmRzLA0KU3ByaW5nZXIgSm91cm5hbHMgRWRpdG9yaWFsIE9mZmljZQ0KTmV1
+cmFsIENvbXB1dGluZyBhbmQgQXBwbGljYXRpb25zDQoNCk5vdyB0aGF0IHlvdXIgYXJ0
+aWNsZSB3aWxsIHVuZGVyZ28gdGhlIGVkaXRvcmlhbCBhbmQgcGVlciByZXZpZXcgcHJv
+Y2VzcywgaXQgaXMgdGhlIHJpZ2h0IHRpbWUgdG8gdGhpbmsgYWJvdXQgcHVibGlzaGlu
+ZyB5b3VyIGFydGljbGUgYXMgb3BlbiBhY2Nlc3MuIFdpdGggb3BlbiBhY2Nlc3MgeW91
+ciBhcnRpY2xlIHdpbGwgYmVjb21lIGZyZWVseSBhdmFpbGFibGUgdG8gYW55b25lIHdv
+cmxkd2lkZSBhbmQgeW91IHdpbGwgZWFzaWx5IGNvbXBseSB3aXRoIG9wZW4gYWNjZXNz
+IG1hbmRhdGVzLiBTcHJpbmdlcidzIG9wZW4gYWNjZXNzIG9mZmVyaW5nIGZvciB0aGlz
+IGpvdXJuYWwgaXMgY2FsbGVkIE9wZW4gQ2hvaWNlIChmaW5kIG1vcmUgaW5mb3JtYXRp
+b24gb24gd3d3LnNwcmluZ2VyLmNvbS9vcGVuY2hvaWNlKS4gT25jZSB5b3VyIGFydGlj
+bGUgaXMgYWNjZXB0ZWQsIHlvdSB3aWxsIGJlIG9mZmVyZWQgdGhlIG9wdGlvbiB0byBw
+dWJsaXNoIHRocm91Z2ggb3BlbiBhY2Nlc3MuIFNvIHlvdSBtaWdodCB3YW50IHRvIHRh
+bGsgdG8geW91ciBpbnN0aXR1dGlvbiBhbmQgZnVuZGVyIG5vdyB0byBzZWUgaG93IHBh
+eW1lbnQgY291bGQgYmUgb3JnYW5pemVkOyBmb3IgYW4gb3ZlcnZpZXcgb2YgYXZhaWxh
+YmxlIG9wZW4gYWNjZXNzIGZ1bmRpbmcgcGxlYXNlIGdvIHRvIHd3dy5zcHJpbmdlci5j
+b20vb2FmdW5kaW5nLg0KQWx0aG91Z2ggZm9yIG5vdyB5b3UgZG9uJ3QgaGF2ZSB0byBk
+byBhbnl0aGluZywgd2Ugd291bGQgbGlrZSB0byBsZXQgeW91IGtub3cgYWJvdXQgeW91
+ciB1cGNvbWluZyBvcHRpb25zLg0KDQoNClRoaXMgbGV0dGVyIGNvbnRhaW5zIGNvbmZp
+ZGVudGlhbCBpbmZvcm1hdGlvbiwgaXMgZm9yIHlvdXIgb3duIHVzZSwgYW5kIHNob3Vs
+ZCBub3QgYmUgZm9yd2FyZGVkIHRvIHRoaXJkIHBhcnRpZXMuDQoNClJlY2lwaWVudHMg
+b2YgdGhpcyBlbWFpbCBhcmUgcmVnaXN0ZXJlZCB1c2VycyB3aXRoaW4gdGhlIEVkaXRv
+cmlhbCBNYW5hZ2VyIGRhdGFiYXNlIGZvciB0aGlzIGpvdXJuYWwuIFdlIHdpbGwga2Vl
+cCB5b3VyIGluZm9ybWF0aW9uIG9uIGZpbGUgdG8gdXNlIGluIHRoZSBwcm9jZXNzIG9m
+IHN1Ym1pdHRpbmcsIGV2YWx1YXRpbmcgYW5kIHB1Ymxpc2hpbmcgYSBtYW51c2NyaXB0
+LiBGb3IgbW9yZSBpbmZvcm1hdGlvbiBvbiBob3cgd2UgdXNlIHlvdXIgcGVyc29uYWwg
+ZGV0YWlscyBwbGVhc2Ugc2VlIG91ciBwcml2YWN5IHBvbGljeSBhdCBodHRwczovL3d3
+dy5zcHJpbmdlcm5hdHVyZS5jb20vcHJvZHVjdGlvbi1wcml2YWN5LXBvbGljeS4gSWYg
+eW91IG5vIGxvbmdlciB3aXNoIHRvIHJlY2VpdmUgbWVzc2FnZXMgZnJvbSB0aGlzIGpv
+dXJuYWwgb3IgeW91IGhhdmUgcXVlc3Rpb25zIHJlZ2FyZGluZyBkYXRhYmFzZSBtYW5h
+Z2VtZW50LCBwbGVhc2UgY29udGFjdCB0aGUgUHVibGljYXRpb24gT2ZmaWNlIGF0IHRo
+ZSBsaW5rIGJlbG93Lg0KDQpfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fXw0KSW4gY29tcGxpYW5jZSB3aXRoIGRhdGEgcHJvdGVjdGlv
+biByZWd1bGF0aW9ucywgeW91IG1heSByZXF1ZXN0IHRoYXQgd2UgcmVtb3ZlIHlvdXIg
+cGVyc29uYWwgcmVnaXN0cmF0aW9uIGRldGFpbHMgYXQgYW55IHRpbWUuICAoVXNlIHRo
+ZSBmb2xsb3dpbmcgVVJMOiBodHRwczovL3d3dy5lZGl0b3JpYWxtYW5hZ2VyLmNvbS9u
+Y2FhL2xvZ2luLmFzcD9hPXIpLiBQbGVhc2UgY29udGFjdCB0aGUgcHVibGljYXRpb24g
+b2ZmaWNlIGlmIHlvdSBoYXZlIGFueSBxdWVzdGlvbnMu
+
