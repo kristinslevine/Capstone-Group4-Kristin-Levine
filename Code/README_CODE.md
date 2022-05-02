@@ -54,7 +54,7 @@ For each file:
 
 For each file:
 
-1. Change the path to your abspath_curr and test folder 
+1. Change the path to your abspath_curr and test folder (Cell 4 and Cell 10)
 2. Run the file to ensemble the models
 
 **6-Other-Dataset-Explorations**
