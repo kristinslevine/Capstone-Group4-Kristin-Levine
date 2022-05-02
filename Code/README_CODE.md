@@ -37,7 +37,7 @@ This folder contains three files using flipped-augmented data: ResNet50, VGG16, 
 
 For each file: 
 
-1. Change the paths to the abspath_curr, flip_train, val, and test folders 
+1. Change the paths to the abspath_curr, flip_train, val, and test folders (Cell 4 and 26)
 2. Run the file to train the model
 
 **4-Create-Models-Shifted**
