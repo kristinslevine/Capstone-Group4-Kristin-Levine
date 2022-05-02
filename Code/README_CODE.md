@@ -43,11 +43,11 @@ For each file:
 **4-Create-Models-Shifted**
 
 
-This folder contains three files using shifted-augmented data: ResNet50, VGG16, Xception
+This folder contains three files using shifted-augmented data: ResNet50, VGG16, Xception 
 
 For each file: 
 
-1. Change the paths to the abspath_curr, shift_train, val, and test folders 
+1. Change the paths to the abspath_curr, shift_train, val, and test folders (Cell 4 and 26)
 2. Run the file to train the model
 
 **5-Ensemble-Best-Models**
