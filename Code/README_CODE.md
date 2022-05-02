@@ -28,7 +28,7 @@ This folder contains three files using non-augmented data: ResNet50, VGG16, Xcep
 
 For each file: 
 
-1. Change the paths to the abspath_curr, original train, val, and test folders 
+1. Change the paths to the abspath_curr, original train, val, and test folders (Cell 4 and 27)
 3. Run the file to train the model
 
 **3-Create-Models-Flipped**
