@@ -11,4 +11,4 @@ Final-Project-Report -- contains final report I wrote for GWU capstone class
 
 Group-Proposal -- contains origninal proposal and the file of weekly progress reports
 
-Technical-Paper -- contains technical paper and copy of emailed receipt
+Technical-Paper -- contains technical paper (pdf) and copy of emailed receipt
